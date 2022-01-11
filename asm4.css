@@ -1,0 +1,128 @@
+body {
+    box-sizing: border-box;
+}
+body.container-fluid{
+    padding:0px;
+}
+.navbar-brand {
+    background-color: rgb(238, 28, 28);
+    color:white !important;
+    padding: 2px 15px !important;
+    border-radius: 50%;
+    border: 1px solid rgb(240, 206, 206);
+    font-family: 'Karantina', 'Arial';
+    font-size:30px;
+    display:inline-block;
+}
+
+
+.nav-link{
+    
+    font-weight: bold;
+}
+.navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#divtrong {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #main article{
+    padding:10px 10px 10px 10px;
+}
+div.text{
+    padding: 10px 10px 10px 10px;
+}
+.nav-link:hover{
+    color: rgb(228, 0, 0) !important;
+}
+#main{
+    background-color:black;
+    color:white;
+}
+#main a{
+	color:white;
+	text-decoration:none;
+}
+#main .read-more:hover{
+	color: rgb(228, 0, 0);
+}
+.text-small{
+	font-size:small;
+	color:#A8A8A8;
+}
+#main .source .author{
+	color: rgb(228, 0, 0);
+}
+#main .source .date{
+	color: rgb(228, 0, 0);
+}
+#main .link{
+	display:block;
+	text-align:right;
+}
+#main img{
+    width:100%;
+}
+.loading{
+    width:100%;
+    height:100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    align-items: center;
+}
+.loading-icon{
+    font-size:x-large;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    color:black;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+h1{
+    font-weight: bold;
+}
+h5{
+    font-weight: bold;
+}
+.modal input.search-param{
+    width:100%;
+    padding:5px 5px 5px 5px;
+}
+.modal .date-container{
+    display:inline-block;
+    width:30%;
+    padding:5px 5px 5px 5px;
+    margin: 5px 0px 5px 0px;
+}
+.card{
+    background:black !important;
+}
+.card:hover{
+    border: 1px solid gray;
+}
+footer{
+    background-color: black;
+    color:white;
+    padding:10px 10px 10px 10px;
+    vertical-align:middle;
+}
+@media only screen and (max-width: 768px) {
+    /* For desktop: */
+    
+    .col-3 {width: 100% !important;}
+    
+    .xs-center{
+        text-align: left;
+    }}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Asm 4/asm4.css">
+     <!--Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+     <!--jQuery-->
+     <script src="jquery.js"></script>
+     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
+     <!--Javascript and CSS-->
+     <script type = "text/javascript" src = "asm4.js"></script>
+     <script type = "text/javascript" src="moment.min.js"></script>
+     <link href = "/Asm 4/asm4.css" rel = "stylesheet" type = "text/css">
+     <!--Fontawesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+     <!--Fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Karantina&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white">
+          <header id="header" class="row header">                                                  <!--       Header        -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Home</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      
+                      <li class="nav-item">
+                        <a id="tinMoi" class="nav-link top-news" href="#">Tin mới</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Các Chuyên Mục
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">                  <!--   Dropdown      -->
+                          <li><a class="dropdown-item congnghe" href="#">Công nghệ</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item sucKhoe" href="#">Sức khỏe</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item yTe" href="#">Y tế</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a  class="dropdown-item theThao" href="#">Thể thao</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a  class="dropdown-item kinhTe" href="#">Kinh tê</a></li>
+                        </ul>
+                      </li>
+                     
+                      <li class = "nav-item d-none d-lg-block">
+                        <a class = "nav-link active" href = '#' title = 'Tìm kiếm' class = "search" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </li>
+                    </ul>
+                    
+                      <li class = "nav-item d-none d-lg-block"></li>
+                      <button class="nav-link active btn btn-outline-success search" type="submit" data-bs-toggle="modal" data-bs-target="#search-modal">Search</button>
+                    </li>
+                    
+                  </div>
+                </div>
+              </nav>
+
+          </header>
+
+          <section id="main" class="row">                                                 <!--           Phần thân hiển thị thông tin            -->
+
+            <div class = "col-1 d-none d-md-block">
+              <p></p>
+            </div>
+
+            <div class="col-10">
+              <br>
+              <h1>Tin nổi bật</h1>
+              <br>
+              <article class = "news-0 row">
+                          <!--Biểu tượng loading trong khi tải dữ liệu-->
+                 <div class = "loading text-center">
+                     <div class = "loading-icon d-block">
+                          <p><i class="fas fa-spinner fa-pulse"></i></p>
+                          <p>Đang tải dữ liệu</p>
+                     </div>
+                 </div>
+                <div class = "col-sm-6 img-container">
+                    <img src = "/Asm 4/img/placeholder.jpg" class = "img-fluid">
+                </div>
+                <div class = "col-sm-6 text">
+                    <a href = "" class = "headline" target="_blank">
+						        <h5><i class="fas fa-sync fa-spin"></i></h5>
+					          </a>
+				           	<p class = "source text-small">
+					             	Đăng bởi <span class = "author">tác giả</span> vào <span class = "date"></span>
+				          	</p>
+                    <p class = "summary"><i class="fas fa-sync fa-spin"></i></p>
+                    <div class = "link">
+						        <a href = "" class = "read-more text-small" target="_blank">Đọc tiếp</a>
+				          	</div>
+                </div>
+            </article>
+            <div class = "row news">
+            </div>
+           
+          </div>
+
+          <div class = "col-1 d-none d-md-block">
+            <p></p>
+          </div>
+ 
+          </section>
+
+          <footer class="row">                                                     <!--       footer            -->
+            <div id="divtrong" class="col-12"></div>
+            <div class="col-12 text-center" >
+              <br>
+                <p>Design :<b>Phạm Văn Lương</b></p>
+                <a href = "#"><i class="fab fa-facebook-square"></i></a>
+                <a href = "#"><i class="fab fa-twitter-square"></i></a>
+                <a href = "#"><i class="fab fa-google-plus-square"></i></a>
+                <br>
+
+            </div>
+            
+          </footer>
+
+          <section>
+            <div class="modal fade" id = "search-modal" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">                             <!--         Nội dung hộp thoại Modal         -->
+                  <div class="modal-header">
+                    <h5 style="color: black;" class="modal-title">Tìm kiếm</h5>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <ul class="nav nav-tabs" id="search-box" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#search" type="button" role="tab" aria-controls="home" aria-selected="true">Tìm kiếm</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="advanced-search-tab" data-bs-toggle="tab" data-bs-target="#advanced" type="button" role="tab" aria-controls="advanced-search" aria-selected="false">Tìm kiếm nâng cao</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content"><br>
+                      <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
+                          <div>
+                              <p style="color: black;">Nhập từ khóa</p>
+                              <input type = "text" id = "search-param" class = "search-param" placeholder = "Nhập từ khóa">
+                              <hr>
+                              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy bỏ</button>
+                              <button type="button" id = "search-button" class="btn btn-outline-danger" data-bs-dismiss="modal">Tìm kiếm</button>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="advanced" role="tabpanel" aria-labelledby="profile-tab">
+                        <div>
+                          <!--Từ khóa tìm kiếm-->
+                          <p style="color: black;"> Nhập từ khóa</p>
+                          <input type = "text" id = "search-param1" class = "search-param" placeholder = "Nhập từ khóa"><br><br>
+                          <span style="color: black;">Từ ngày:</span>
+                          <div class = "date-container"><input type = "datetime" id = "startDate"></div>
+                          <span style="color: black;">Đến ngày:</span>
+                          <div class = "date-container"><input type = "datetime" id = "endDate"></div>
+                          <hr>
+                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy bỏ</button>
+                          <button type="button" id = "advanced-search-button" class="btn btn-outline-danger" data-bs-dismiss="modal">Tìm kiếm</button>
+                       </div>
+
+                      </div>
+
+
+                </div>
+
+              </div>
+              
+            </div>
+
+          </section>
+
+
+
+
+
+        
+
+    </div>
+        
+</body>
+</html>
